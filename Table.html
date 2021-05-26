@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in Html</title>
+    <style>
+        table,th,td{
+        /* This is table border */
+            border: 2px solid red;
+            /* This is single line border */
+            border-collapse: collapse;
+            padding: ;
+        }
+        th,td{
+            /* This is table cell padding */
+            padding: 10px;
+            /* HTML Table - Left-align Headings */
+            text-align: left;
+        }
+        table{
+            /* HTML Table - Add Border Spacing when border-collapse is off*/
+            border-spacing: 10px;
+        }
+        #color1{
+            background-color: green;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 50%;">
+        <caption>Table in HTML</caption>
+        <tr>
+            <!-- This is table heading data -->
+            <th>Name </th>
+            <!-- Learn Colspan Attribute -->
+            <th colspan="4">Name2</th>
+        </tr>
+        <!-- This is table row data -->
+        <tr>
+           <!-- This is table data -->
+            <td>Mahfuz</td>
+            <td>Mahbubul</td>
+           <td colspan="3">Mahbuba</td>
+           
+        </tr>
+        <tr>
+            <td>Masrufa</td>
+            <td>Monira</td>
+            <td>Mahfuzur</td>
+            <td>How</td>
+            <td>mahfuz</td>
+        </tr>
+    </table>
+    <br>
+    <br><br>
+    <table style="width: 50%;">
+        <!-- Learn Table Caption -->
+    <caption>
+        Second table
+    </caption>
+    <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+    </tr>
+    <tr>
+        <!-- Learn Rowspan attribute -->
+        <td rowspan="2">Mahfuz</td>
+        <td >01777250596</td>
+    </tr>
+    <tr>
+        <td>01921</td>
+    </tr>
+    </table>
+    <br><br><br>
+    <table id="color1" style="width: 50%;">
+        <caption>Table Color</caption>
+        <tr>
+            <td>Name</td>
+            <td>Roll</td>
+        </tr>
+        <tr>
+            <td>Mahfuz</td>
+            <td>01</td>
+        </tr>
+    </table>
+</body>
+</html>
