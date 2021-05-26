@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html List</title>
+    <style>
+        ul .color {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .menu {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-size: medium;
+        }
+
+        li a:hover {
+            background-color: rgb(184, 139, 226);
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <p><b>Html List</b></p>
+    <h2> Unordered List</h2>
+    <ul style="list-style-type: circle;">
+        <li>Mahfuz</li>
+        <li>Mahbubul</li>
+        <li>Monira</li>
+        <li>Mahbuba</li>
+        <li>Masrufa</li>
+    </ul><br>
+    <ul style="list-style-type: disc;">
+        <li>Mahfuz</li>
+        <li>Mahbubul</li>
+        <ul style="list-style-type: square;">
+            <li>Mahfuz</li>
+            <li>Mahbubul</li>
+            <li>Monira</li>
+            <li>Mahbuba</li>
+            <li>Masrufa</li>
+
+            <ul style="list-style-type: circle;">
+                <li>Mahbuba</li>
+                <li>Masrufa</li>
+                <ul style="list-style-type: none;">
+                    <li>No Unordered list</li>
+                    <li>Ha ha hA</li>
+
+                </ul>
+            </ul>
+            <li>Monira</li>
+            <li>Mahbuba</li>
+            <li>Masrufa</li>
+        </ul>
+        <h2>Navigation Menu By unordered List</h2><br>
+        <ul class="color">
+            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="#blog">Blog</a></li>
+            <li class="menu"><a href="#about">About</a></li>
+            <li class="menu"><a href="#contant-us">Contact Us</a></li>
+        </ul>
+        <br>
+        <br><br><br>
+        <h1>Ordered List Explain</h1>
+        <ol>
+            <li>Mahfuz</li>
+            <li>Mahbubul</li>
+            <li>Monira</li>
+        </ol>
+        <br><br>
+        <ol style="list-style-type:lower-roman">
+            <li>Mahfuz</li>
+            <li>Mahbubul</li>
+            <li>Monira</li>
+        </ol>
+        <br><br>
+        <ol type="a">
+            <li>Mahfuz</li>
+            <li>Mahbubul</li>
+            <li>Monira</li>
+        </ol>
+        <br><br>
+        <ol start="8">
+            <li>Mahfuz</li>
+            <li>Mahbubul</li>
+            <li>Monira</li>
+        </ol>
+
+        <br><br>
+        <h1>HTML Description Lists</h1>
+        <dl>
+            <dt>Html</dt>
+            <dd>--Hyper text markup language.</dd>
+            <dt>HTTP</dt>
+            <dd>--Hyper Text Transfer Protocol</dd>
+        </dl>
+
+
+</body>
+
+</html>
