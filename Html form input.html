@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <style>
+        .form {
+            /* margin-left: 30%;
+           margin-right: 0%;
+           margin-top: 5%;
+           margin-bottom: 20%; */
+            padding: 50px;
+            background-color: rgb(18, 106, 109);
+        }
+        
+        #info {
+            margin-bottom: 5px;
+        }
+        
+        #comment:hover {
+            background-color: skyblue;
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="form_validation.php" name="form" method="POST" target="_blank" enctype="multipart/form-data" autocomplete="on">
+            <h4>Input your data and Submit:</h4>
+            <div class="info">
+                First Name: <br />
+                <input type="text" name="first-name" placeholder="FIrst Name" required id="info" autocomplete="on" maxlength="50" autofocus />
+                <br /> Last Name: <br />
+                <input type="text" name="last-name" required id="info" /><br /> Email: <br />
+                <input type="email" name="email" size="30px" value="example@gmail.com" required class="email" id="info" /><br />
+                <!-- Hidden Attribute uses it is do not show -->
+                <input type="hidden" name="refferal" value="mahfuz" /> Password: <br />
+                <input type="password" name="pw" required class="password" id="info" placeholder="Minimum 8 charecter" /><br />
+                <br /><br />
+            </div>
+
+            Select Your Favorite Fruit: <br />
+            <!-- Value Attribute must be needed in checkbox Attribute and nothing word -->
+            <input type="checkbox" value="mango" id="mango" name="fruit1" />
+            <label for="mango">Mango</label><br />
+            <input type="checkbox" value="orange" id="orange" name="fruit2" />
+            <!-- For Attribute must be needed in label tag and id & for value becomes to be same. -->
+            <label for="orange">Orange</label><br />
+            <input type="checkbox" value="Banana" id="banana" name="fruit3" />
+            <label for="banana">Banana</label><br /> Select your District: <br />
+            <!-- Name Attribute must be needed else all optioned has been seleted. -->
+            <!-- For Attribute must be needed in label tag and id & for value becomes to be same. -->
+            <label for="zilla1">
+        <input type="radio" name="district" id="zilla1" />Chapainawabgonj</label><br />
+            <label for="zilla2">
+        <input type="radio" name="district" id="zilla2" disabled />Khustia</label><br />
+            <label for="zilla3">
+        <input type="radio" name="district" id="zilla3" /> Khulna</label><br />
+            <br /> Select your Gender: <br />
+
+            <select>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+            <br /><br />
+            <input type="reset" value="Clear_info" />
+            <input type="submit" value="Register" />
+
+            <fieldset name="payment">
+                <legend>Payment Method</legend>
+                <p>Name: <input type="text" /></p>
+                <p>Roll: <input type="number" /></p>
+            </fieldset>
+            <fieldset>
+                <legend>Payment method 2</legend>
+                <p>Name: <input type="text" /></p>
+                <p>Roll: <input type="number" /></p>
+            </fieldset>
+            <br />
+            <button type="reset">Reset</button>
+            <button>Default</button>
+            <button type="submit">Submit</button>
+            <button type="button">Button</button>
+            <br />
+            <br />
+            <h2>Uses of Datalist tag and list Attribute</h2>
+            <label for="division">
+        Select Your Division: <br />
+        <input type="text" name="division" list="divisions" id="division" />
+      </label>
+            <datalist id="divisions">
+        <option value="dhk" label="Dhaka"></option>
+        <option value="raj">Rajshahi</option>
+        <option value="ran">Rangpur</option>
+        <option value=""></option>
+        <option value="cht">Chittagong</option>
+        <option value="bar">Barisal</option>
+      </datalist>
+            <br />
+            <p>Input Your Age:</p>
+            <input type="number" name="age" min="20" max="60" step="1" value="20" required /><br /> Range Attribute Useable. <br />
+            <input type="range" name="range attribute" min="10" max="30" step="5" />
+            <br /> Select Your Birthday: <br />
+            <input type="date" /><br /> Date of Birthday(golbal Time, Date, Zone): <br />
+            <input type="datetime" /><br /> Date of Birthday(golbal Time, Date, Zone): <br />
+            <input type="datetime-local" /> <br /> Time of Birth: <br />
+            <input type="time" /><br /> Week of Birthday: <br />
+            <input type="week" />
+
+            <br />
+            <br />
+            <h2>Uses input in Color</h2>
+            <br /> Choose Your favorite color: <br />
+            <input type="color" /><br />
+            <br />
+            <b>Search: </b><input type="search" />
+            <button type="submit" value="Search">Search</button>
+            <h2>Submit image button</h2>
+            <input type="image" name="submit" src="img/sumbit.png" height="80" width="150" />
+
+            <p>Upload Your Photo</p>
+            <br />
+            <input type="file" accept="png" /><br />
+            <br /> Select Your Upazila <br />
+            <select name="upazilla" size="1">
+        <option value="gomastapur">Gomastapur</option>
+        <option value="gomastapur">Bhalahat</option>
+        <option value="gomastapur">Chapai</option>
+        <option value="gomastapur">SHibgong</option>
+        <option value="gomastapur">Nachole</option>
+        <option value="gomastapur">Kushtia</option>
+        <option value="gomastapur">pabna</option>
+      </select><br />
+            <br /> Pourosova: <br />
+            <select name="pourosova" id="" size="1">
+        <optgroup label="Dhaka District">
+          <option value="dohar">Dohar</option>
+          <option value="savar">Savar</option>
+        </optgroup>
+        <optgroup label="Rajsh ai District">
+          <option value="rohanpur">Rohanpur</option>
+          <option value="nachole">Nachole</option>
+        </optgroup>
+        <optgroup label="Rangpur">
+          <option value="pachbibi">Pachbibi</option>
+          <option value="fulbari">Fulbari</option>
+        </optgroup>
+      </select>
+            <h3>Uses of Textarea Attribute</h3>
+            <p style="font-size: 15px; font-weight: bold">
+                Leave a write a comment:
+            </p>
+            <textarea name="commments" id="" cols="30" rows="10" wrap="hard"></textarea><br />
+            <button name="comment" type="button" style="
+            background-color: red;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+          " id="comment">
+        Commment
+      </button>
+        </form>
+    </div>
+</body>
+
+</html>
